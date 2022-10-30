@@ -47,11 +47,13 @@
   padding: 0px;
 }
 
-.list-tasks__item, .header-task-list {
+.list-tasks__item,
+.header-task-list {
   list-style: none;
 }
 
-.task__input,.btn{
+.task__input,
+.btn {
   outline: none;
 }
 
@@ -133,7 +135,7 @@
   width: 226px;
 }
 
-.list-tasks__item > .task__input {
+.task__input {
   width: 226px;
 }
 
