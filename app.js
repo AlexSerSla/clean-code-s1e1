@@ -110,6 +110,8 @@ var editTask=function(){
 
     //toggle .edit-mode on the parent.
     listItem.classList.toggle("edit-mode");
+    editInput.classList.toggle("list-tasks__item-input_edit-mode");
+    label.classList.toggle("list-tasks__item-label_edit-mode");
 };
 
 
@@ -131,6 +133,8 @@ var taskCompleted=function(){
 
     //Append the task list item to the #completed-tasks
     var listItem=this.parentNode;
+    var label=listItem.querySelector("label");
+    label.classList.toggle("list-tasks__item-label_completed");
     completedTasksHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
 
@@ -143,6 +147,8 @@ var taskIncomplete=function(){
     //When the checkbox is unchecked
     //Append the task list item to the #incompleteTasks.
     var listItem=this.parentNode;
+    var label=listItem.querySelector("label");
+    label.classList.toggle("list-tasks__item-label_completed");
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem,taskCompleted);
 }

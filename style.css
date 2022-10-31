@@ -148,7 +148,7 @@
 }
 
 /* Completed */
-#completed-tasks .list-tasks__item-label {
+.list-tasks__item-label_completed {
   text-decoration: line-through;
   color: #888;
 }
@@ -158,11 +158,11 @@
   display: none;
 }
 
-.edit-mode .list-tasks__item-input {
+.list-tasks__item-input_edit-mode {
   display: inline-block;
   width: 224px;
 }
 
-.edit-mode .list-tasks__item-label {
+.list-tasks__item-label_edit-mode {
   display: none;
 }
